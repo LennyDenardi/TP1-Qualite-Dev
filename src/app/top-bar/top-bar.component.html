@@ -1,0 +1,13 @@
+<a routerLink="/">
+  <h1>My Store</h1>
+</a>
+
+<a routerLink="/cart" class="button fancy-button">
+  <i class="material-icons">shopping_cart</i>Checkout
+</a>
+<a routerLink="/login" class="button fancy-button" *ngIf="!isLoggedIn">
+  <i class="material-icons">login</i>Login
+</a>
+<a routerLink="/logout" class="button fancy-button" *ngIf="isLoggedIn" (click)="logout()">
+  <i class="material-icons">logout</i>Logout
+</a>
